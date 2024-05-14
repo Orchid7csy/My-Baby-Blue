@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    html,body{
+        height: 100%;
+    }
+    body{
+        background:url(./boom.jpg)no-repeat;
+        background-size: cover;
+    }
+    .buttonbox{
+        width: 200px;
+        height: 400px;
+        background:orange;
+        display: flex;
+        flex-direction: column;
+        color:white;
+        transform: translateY(50%);
+    }
+    .buttonbox butt{
+        height: 40px;
+        width: 100px;
+        font-size: 23px;
+    }
+    .map{
+        width: 880px;
+        height: 500px;
+        background: url(./地图1.jpg);
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .map>div{
+        width: 62.5px;
+        height: 62.5px;
+        position: absolute;
+        border-radius: 50% ;
+    }
+    div.head{
+        background-color: blueviolet;
+    }
+    div.body{
+        background-color: yellowgreen;
+    }
+    div.food{
+        background-color: blue;
+        left: 62.5px;
+        top: 62.5px;
+    }
+    </style>
+   
+</head>
+
+<body>
+    <div class="map">
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="food"></div>
+    </div>
+    <div class="buttonbox">
+        <button>开始</button>
+        <button>暂停</button>
+        <button>结束</button>
+    </div>
+    
+    <console class="log">
+        console.log(asshole)
+
+    </console>
+    <audio src="./See You Again.mp3" autoplay></audio>
+    <script src="./food.js"></script>
+    <script>
+        const food=new Food(".map")
+    </script>
+
+</body>
+
+</html>
